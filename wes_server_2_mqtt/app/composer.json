@@ -1,0 +1,30 @@
+{
+    "name": "lanfisis/wes-server-to-mqtt-bridge",
+    "description": "A command app who transform WES server data file to MQTT messages",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lanfisis/react-mqtt/"
+        }
+    ],
+    "require": {
+        "react/http": "1.x-dev",
+        "symfony/http-client": "6.3.x-dev",
+        "alexmorbo/react-mqtt": "dev-bugfix",
+        "symfony/dotenv": "6.3.x-dev",
+        "symfony/console": "6.4.x-dev"
+    },
+    "license": "MIT Licence",
+    "autoload": {
+        "psr-4": {
+            "Lanfisis\\WesServerToMqttBridge\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Buros",
+            "email": "lanfisis@gmail.com"
+        }
+    ]
+}

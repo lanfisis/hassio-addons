@@ -1,0 +1,15 @@
+configuration:
+  wes_server_host:
+    name: Adresse du serveur W.E.S.
+  wes_server_username:
+    name: Nom d'utilisateur du serveur W.E.S.
+  wes_server_password:
+    name: Mot de passe du serveur W.E.S.
+  mqtt_host:
+    name: Adresse du courtier MQTT
+  mqtt_port:
+    name: Port du courtier MQTT
+  mqtt_username:
+    name: Nom d'utilisateur MQTT
+  mqtt_password:
+    name: Mot de passe MQTT

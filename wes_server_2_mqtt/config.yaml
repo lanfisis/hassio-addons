@@ -1,0 +1,36 @@
+name: "W.E.S. Server to MQTT"
+description: "An add-on to transform W.E.S Server data to MQTT messages."
+version: "1.0.5"
+slug: "wes_server_2_mqtt"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+url: "https://github.com/lanfisis/hassio-addons"
+startup: services
+discovery:
+  - mqtt
+panel_icon: mdi:family-tree
+ingress: true
+ingress_port: 8282
+ports:
+  8282/tcp: 8282
+options:
+  wes_server_host: null
+  wes_server_username: null
+  wes_server_password: null
+  mqtt_host: null
+  mqtt_port: 1883
+  mqtt_username: null
+  mqtt_password: null
+schema:
+  wes_server_host: str
+  wes_server_username: str
+  wes_server_password: password
+  mqtt_host: str
+  mqtt_port: port
+  mqtt_username: str
+  mqtt_password: str

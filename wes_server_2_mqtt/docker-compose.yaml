@@ -1,0 +1,18 @@
+version: '3.2'
+services:
+  ha:
+    privileged: true
+    image: ghcr.io/home-assistant/devcontainer:addons
+    ports:
+      - "7123:8123"
+      - "7357:4357"
+      - "8282:8282"
+    volumes:
+      - .:/workspace:cached
+      - /var/lib/docker
+    environment:
+      GIT_EDITOR: "code --wait"
+      WORKSPACE_DIRECTORY: "/workspace"
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

@@ -1,0 +1,18 @@
+name: "PHP base"
+description: "Base for a HA add-on based on PHP"
+version: "1.0.3"
+slug: "php_base"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: services
+ports:
+  8000/tcp: 8000
+options:
+  wes_server_address: null
+schema:
+  wes_server_address: str
